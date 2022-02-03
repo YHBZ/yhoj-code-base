@@ -29,5 +29,3 @@ HTML存在front文件夹中，Javascript及CSS文件保存在front/static中，�
 
 ### 后端人员
 后端的代码存放在src文件夹中，src/index.ts是入口程序，尽量不要进行大更改，路由可以放在src/routes中，不要擅自修改根目录的文件，尤其是`.gitignore`、`package.json`等重要文件，也不要自行删改`node_modules`的文件，通过npm操作，删除npm包时一定要征求管理员同意
-
-
