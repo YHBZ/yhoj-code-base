@@ -1,17 +1,19 @@
 {
   "name": "yhoj",
   "version": "0.0.1",
-  "description": "An OJ.",
+  "description": "Online Judge.",
   "main": "build/index.js",
   "scripts": {
     "test": "npx tsc src/index.ts -outDir build/"
   },
   "keywords": [
     "OJ",
+    "Online Judge",
     "server",
-    "typescript"
+    "typescript",
+    "Web"
   ],
-  "author": "",
+  "author": "YHBZ",
   "devDependencies": {
     "@types/express": "^4.17.13",
     "typescript": "^4.5.5"
