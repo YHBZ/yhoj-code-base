@@ -4,7 +4,8 @@
   "description": "Online Judge.",
   "main": "build/index.js",
   "scripts": {
-    "test": "npx tsc src/index.ts -outDir build/"
+    "build": "npx tsc src/index.ts -outDir build/",
+    "test": "node build/index.js"
   },
   "keywords": [
     "OJ",
@@ -22,5 +23,9 @@
     "express": "^4.17.2",
     "multer": "^1.4.4"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "contributors": [
+    "YHBZ",
+    "sjc0910"
+  ]
 }
