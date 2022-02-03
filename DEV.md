@@ -14,7 +14,7 @@ git init
 git remote add origin 你刚复制的网址
 git config http.sslverify false
 git config --global user.name "你的github用户名"
-git config user.email=你的邮箱 --global
+git config user.email "你的邮箱" --global
 git pull origin develop
 ```
 
