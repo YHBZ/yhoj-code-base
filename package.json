@@ -19,5 +19,6 @@
   "dependencies": {
     "express": "^4.17.2",
     "multer": "^1.4.4"
-  }
+  },
+  "license": "GPL-3.0-or-later"
 }
