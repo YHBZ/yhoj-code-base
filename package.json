@@ -22,7 +22,8 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "express": "^4.17.2",
-    "multer": "^1.4.4"
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1"
   },
   "license": "GPL-3.0-or-later",
   "contributors": [
