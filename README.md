@@ -2,3 +2,14 @@
 
 # yhoj-code-base
 YHOJ致力于为信息学竞赛生提供美好体验！
+
+
+This a Code Base for YHOJ.
+
+It's only for develop and releases;
+
+Everyone can see and copy it, the license for it is GPL v3.0.
+
+Each PUSH is on DEVELOP, not RELEASE. The RELEASE can only be pushed by YHBZ. 
+
+YHOJ is winning!
