@@ -1,0 +1,15 @@
+{
+    "port": 80,
+    "host": "0.0.0.0",
+    "MySQL": { // MySQL settings
+        "host": "",
+        "port": 3306,
+        "username": "", // MySQL user
+        "password": "", // password of the user above
+        "database": "" // database to operate
+        // (be sure to grant permissions to the user)
+    },
+    "security": {
+        "encryption-provider": "encrypto.ts" // we'll call this program to encrypt
+    }
+}
