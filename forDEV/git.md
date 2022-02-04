@@ -32,4 +32,4 @@ HTML存放在`/front`文件夹中，Javascript及CSS文件保存在`/front/stati
 ### 后端人员
 pull下来代码时，使用`npm install`或`cnpm install`
 后端的代码存放在src文件夹中，/src/index.ts是入口程序，尽量不要进行大更改，路由可以放在/src/routes中，不要擅自修改根目录的文件，尤其是`.gitignore`、`package.json`等重要文件，也不要自行删改`node_modules`的文件，通过npm操作。  
-后端开发使用的是`Node.js`+`TypeScript`语言，监听端口为8080，使用nginx来进行转发。
+后端开发使用的是`Node.js`+`TypeScript`语言，监听端口为8080，使用Nginx来进行转发。
