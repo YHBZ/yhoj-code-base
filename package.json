@@ -4,8 +4,10 @@
   "description": "Online Judge.",
   "main": "build/index.js",
   "scripts": {
+    "init": "npm install",
+    "init_cn": "npm install cnpm -g && cnpm install",
     "build": "npx tsc src/index.ts -outDir build/",
-    "test": "node build/index.js"
+    "run": "node build/index.js"
   },
   "keywords": [
     "OJ",
