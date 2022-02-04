@@ -40,5 +40,8 @@ App.get('/*', (req, res) => {
 });
 
 server.listen(config.port, config.host, () => {
+    let host = config.host;
+    if (host === "0.0.0.0") host = "127.0.0.1";
     console.log("Start listening...");
+    console.log(chalk`Please visit {blue {underline http://${host}:${config.port}}}.`);
 });
