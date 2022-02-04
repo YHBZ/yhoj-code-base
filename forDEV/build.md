@@ -8,7 +8,8 @@
 ```bash
 > npm run init_cn
 ```
-4. 构建项目并运行
+4. 在根目录创建`config.json`，内容参考根目录的[config-template.jsonc](https://github.com/YHBZ/yhoj-code-base/blob/develop/config-template.jsonc)（一定要删除注释，不然程序无法读取）
+5. 构建项目并运行
 ```bash
 > npm run build
 > npm run run
