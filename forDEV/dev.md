@@ -21,13 +21,22 @@ git pull origin develop
 
 ### 前端人员/美工
 HTML存放在`/front`文件夹中，Javascript及CSS文件保存在`/front/static`中或使用静态CDN
-图标请保存在`/front`文件夹中，命名为`favicon.ico`
+图标请保存在`/front`文件夹中，命名为`favicon.ico`  
 
-##### CDN列表
-* [BootCDN](https://www.bootcdn.cn/)
-* [Staticfile CDN](http://www.staticfile.org/)
-* [jsdelivr](http://www.jsdelivr.com/)
-* 其他（自行摸索）
+`Vue.js`嵌入代码  
+```html
+<script src='https://unpkg.com/vue@3.2.29'></script>
+```
+
+`jQuery`嵌入代码  
+```html
+<script src='https://unpkg.com/jquery@3.6.0'></script>
+```
+
+`Bootstrap`嵌入代码
+```html
+<script src='https://unpkg.com/bootstrap@5.1.3'></script>
+```
 
 ### 后端人员
 pull下来代码时，使用`npm install`或`cnpm install`
