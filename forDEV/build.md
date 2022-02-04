@@ -1,4 +1,5 @@
 # 开发人员构建说明
+> 注：确保你已执行[dev.md中的Git配置](https://github.com/YHBZ/yhoj-code-base/blob/develop/forDEV/dev.md#git%E9%85%8D%E7%BD%AE)
 1. 安装[Node.js](http://nodejs.cn/download/)
 2. 将代码拉取下来
 ```bash
