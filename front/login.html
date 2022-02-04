@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YHOJ - 登录</title>
+        <script src='static/jquery-3.6.0.min.js'></script>
+    </head>
+    <body>
+        <!-- 在其他页面弹出登录窗口（javascript）：
+            window.open('/login', '_blank', 'width=600, height=400');
+        -->
+        <!--
+            说明：禁止修改<input>的name、required及form的action、method
+        -->
+        <form action="/auth/login" method="post">
+            用户名：<input type="text" name="user" required /><br>
+            密码：<input type="password" name="psw" required /><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

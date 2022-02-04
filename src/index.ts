@@ -1,21 +1,21 @@
 // written by sjc0910
 import express = require('express');
 import http = require('http');
-import path = require('path');
 import crypto = require('crypto');
-import fs = require('fs');
 import chalk = require('chalk');
+import path = require('path');
+
+import login from './routes/login';
+import { front, config } from './global';
+import { log_httpget } from './log';
+
 var App = express();
 var server = http.createServer(App);
-const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config.json')).toString());
-const front = path.join(__dirname, '../front');
 
-function log_httpget(msg: string, code: number = 200) {
-    // msg箭头格式
-    // 链接 ==> 链接（永久重定向）
-    // 链接 --> 链接（临时重定向）
-    console.log(chalk.green(`[HTTP GET ${code}] `) + msg);
-}
+App.use(express.static(front));
+App.use(login);
+
+App.get('/notfound', (req, res) => res.sendFile(path.join(front, 'notfound.html')));
 
 App.get('/open-source', (req, res) => {
     log_httpget('/open-source ==> https://github.com/YHBZ/yhoj-code-base', 301);
@@ -32,8 +32,8 @@ App.get('/', (req, res) => {
 
 // 404
 App.get('/*', (req, res) => {
-    log_httpget(`${req.path} --> /notfound.html`, 404)
-    res.sendFile(path.join(front, 'notfound.html'));
+    log_httpget(`${req.path} --> /notfound.html`, 404);
+    res.redirect(404, '/notfound');
 });
 
 server.listen(config.port, config.host, () => {

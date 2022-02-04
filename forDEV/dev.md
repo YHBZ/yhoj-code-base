@@ -20,7 +20,7 @@ git pull origin develop
 建议安装`GitHub Desktop`
 
 ### 前端人员/美工
-HTML存放在`/front`文件夹中，Javascript及CSS文件保存在`/front/static`中，一些常用的大型库（如`jQuery`、`Vue.js`、`Bootstrap`等）请使用第三方静态CDN  
+HTML存放在`/front`文件夹中，Javascript及CSS文件保存在`/front/static`中或使用静态CDN
 图标请保存在`/front`文件夹中，命名为`favicon.ico`
 
 ##### CDN列表
