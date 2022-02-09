@@ -1,3 +1,5 @@
+Choose your language: English | [简体中文](https://github.com/YHBZ/yhoj-code-base/blob/develop/README_zh.md)
+
 Last build status：[![Node.js CI](https://github.com/YHBZ/yhoj-code-base/actions/workflows/node.js.yml/badge.svg?branch=develop)](https://github.com/YHBZ/yhoj-code-base/actions/workflows/node.js.yml)  
 
 # yhoj-code-base

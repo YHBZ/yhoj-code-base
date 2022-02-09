@@ -1,3 +1,5 @@
+选择语言：[English](https://github.com/YHBZ/yhoj-code-base/blob/develop/README.md) | 简体中文
+
 上次构建状态：[![Node.js CI](https://github.com/YHBZ/yhoj-code-base/actions/workflows/node.js.yml/badge.svg?branch=develop)](https://github.com/YHBZ/yhoj-code-base/actions/workflows/node.js.yml)  
 
 # yhoj-code-base
