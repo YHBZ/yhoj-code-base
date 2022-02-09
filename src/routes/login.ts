@@ -8,7 +8,7 @@ import { verify } from 'hcaptcha';
 import { log_httpget, log_httppost } from '../log';
 import { config, db, front } from '../global';
 import { psw_hash } from './encrypto';
-import email_verify from '../email'; // This module is private.
+import email_verify from '../email';
 var login = express.Router();
 var parser = bodyParser.urlencoded({extended: false});
 
