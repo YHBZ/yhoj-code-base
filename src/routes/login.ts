@@ -2,8 +2,8 @@
 import express = require('express');
 import bodyParser = require('body-parser');
 import path = require('path');
-import chalk from 'chalk';
-import uuid from 'uuid';
+import chalk = require('chalk');
+import uuid = require('uuid');
 import { verify } from 'hcaptcha';
 import { log_httpget, log_httppost } from '../log';
 import { config, db, front } from '../global';
