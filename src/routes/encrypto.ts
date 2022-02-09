@@ -1,4 +1,4 @@
-import crypto from 'crypto';
+import crypto = require('crypto');
 import { config } from '../global';
 function psw_hash(source: string) {
     let cryption = crypto.createHash(config["security-settings"]["hash-algorithm"]);
