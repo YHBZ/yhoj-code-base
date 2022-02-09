@@ -4,12 +4,16 @@
     "MySQL": { // MySQL settings
         "host": "",
         "port": 3306,
-        "username": "", // MySQL user
+        "user": "", // MySQL user
         "password": "", // password of the user above
         "database": "" // database to operate
         // (be sure to grant permissions to the user)
     },
-    "security": {
+    "security-settings": {
+        "hash-algorithm": "MD5",
         "encryption-provider": "encrypto.ts" // we'll call this program to encrypt
+    },
+    "security": {
+        // User defined variables
     }
 }

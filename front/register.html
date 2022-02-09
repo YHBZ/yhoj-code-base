@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YHOJ - 注册</title>
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+        <script src='https://unpkg.com/jquery@3.6.0'></script>
+    </head>
+    <body>
+        <!-- 在其他页面弹出注册窗口（javascript）：
+            window.open('/register', '_blank', 'width=600, height=400');
+        -->
+        <!--
+            说明：禁止修改<input>的name、required及form的action、method
+        -->
+        <form action="/auth/register" method="post">
+            邮箱：<input type="email" name="email" required><br>
+            用户名：<input type="text" name="user" required><br>
+            密码：<input type="password" name="psw" required><br>
+            <div class="h-captcha" data-sitekey="11d41eb4-69c4-4c49-86be-638584c4494e"></div>
+        </form>
+    </body>
+</html>

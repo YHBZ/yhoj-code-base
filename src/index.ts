@@ -1,12 +1,12 @@
 // written by sjc0910
 import express = require('express');
 import http = require('http');
-import crypto = require('crypto');
 import chalk = require('chalk');
 import path = require('path');
+import mysql = require('mysql');
 
 import login from './routes/login';
-import { front, config } from './global';
+import { front, config, db } from './global';
 import { log_httpget } from './log';
 
 var App = express();
@@ -40,6 +40,16 @@ App.get('/*', (req, res) => {
 });
 
 server.listen(config.port, config.host, () => {
+    db.query("SHOW TABLES LIKE 'user';", (err, res) => {
+        if (res === []) {
+            db.query(`CREATE TABLE user
+(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(25) NOT NULL,
+    psw TEXT NOT NULL
+);`);
+        }
+    });
     let host = config.host;
     if (host === "0.0.0.0") host = "127.0.0.1";
     console.log("Start listening...");
