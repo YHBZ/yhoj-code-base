@@ -1,6 +1,6 @@
 / --|
 
-    |--README.md 介绍YHOJ
+    |--README.md & README_zh.md 介绍YHOJ
 
     |--LICENSE 开源协议
 
