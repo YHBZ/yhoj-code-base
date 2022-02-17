@@ -20,25 +20,26 @@ git pull origin develop
 建议安装`GitHub Desktop`
 
 ### 前端人员/美工
-HTML存放在`/front`文件夹中，Javascript及CSS文件保存在`/front/static`中或使用静态CDN
+HTML存放在`/front`文件夹中，Javascript及CSS文件保存在`/front/static`中或使用静态CDN  
 图标请保存在`/front`文件夹中，命名为`favicon.ico`  
 
-`Vue.js`嵌入代码  
+[Vue.js](https://cn.vuejs.org/)嵌入代码  
 ```html
 <script src='https://unpkg.com/vue@3.2.29'></script>
 ```
 
-`jQuery`嵌入代码  
+[jQuery](https://jquery.com/)嵌入代码  
 ```html
 <script src='https://unpkg.com/jquery@3.6.0'></script>
 ```
 
-`Bootstrap`嵌入代码
+[Bootstrap](https://v5.bootcss.com/)嵌入代码
 ```html
 <script src='https://unpkg.com/bootstrap@5.1.3'></script>
 ```
 
 ### 后端人员
-pull下来代码时，使用`npm install`或`cnpm install`
+pull下来代码时，使用`npm install`或`cnpm install`  
 后端的代码存放在src文件夹中，/src/index.ts是入口程序，尽量不要进行大更改，路由可以放在/src/routes中，不要擅自修改根目录的文件，尤其是`.gitignore`、`package.json`等重要文件，也不要自行删改`node_modules`的文件，通过npm操作。  
+请依照[config-template.jsonc](https://github.com/YHBZ/yhoj-code-base/blob/develop/config-template.jsonc)来编写`config.json`（[点此看教程](https://github.com/YHBZ/yhoj-code-base/blob/develop/forDEV/config.md)）  
 后端开发使用的是`Node.js`+`TypeScript`语言，监听端口为8080，使用Nginx来进行转发。
