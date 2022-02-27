@@ -40,10 +40,10 @@ jobs:
     - name: Upload the built Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ matrix.os }}-built-src
+        name: ${{ runner.os }}-built-src
         path: ./build/
     - name: Upload all files
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ matrix.os }}-all-files
+        name: ${{ runner.os }}-all-files
         path: ./
