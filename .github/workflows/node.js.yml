@@ -9,11 +9,13 @@ on:
     paths:
       - src/**
       - .github/workflows/**
+      - package.json
   pull_request:
     branches: [ develop, release ]
     paths:
       - src/**
       - .github/workflows/**
+      - package.json
 jobs:
   build:
 
