@@ -44,10 +44,10 @@ jobs:
       with:
         name: ${{ runner.os }}-built-src
         path: ./build/
-        retention-days: 5
+        retention-days: 30
     - name: Upload all files
       uses: actions/upload-artifact@v2
       with:
         name: ${{ runner.os }}-all-files
         path: ./
-        retention-days: 15
+        retention-days: 30
